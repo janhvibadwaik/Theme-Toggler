@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggler</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" id="input-name"/>
+
+    <button type="button" onclick="saveUserDetails()" id="btn-submit">Submit</button>
+
+    <h1> Welcome,<span id ="text-user-name">Guest</span>!</h1>
+    <br/>
+    <br/>
+    <br/>
+    <button type="button" onclick="logout()">Logout</button>
+    <!-- <button type="button" onclick="toggleDark()">Dark</button>
+    <button type="button" onclick="toggleLight()">Light</button> -->
+
+    <div class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+        <span class="icon-light" id="icon-light">☀️</span>
+        <span class="icon-dark" id="icon-dark">🌙</span>
+    </div>
+</body>
+</html>
